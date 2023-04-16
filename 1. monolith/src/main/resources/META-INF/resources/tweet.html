@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./utils.js"></script>
+    <title>Tweet</title>
+  </head>
+  <body>
+    <h1>Postear un Tweet</h1>
+    <br />
+    <form class="container" method="dialog">
+      <input
+        required
+        class="textbox"
+        type="text"
+        name="tweet"
+        id="tweet"
+        maxlength="140"
+        placeholder="What is happening?!"
+      />
+      <button class="btn" onclick="onPostTweetClick(tweet.value)">Tweet</button>
+    </form>
+    <br /><br />
+    <button class="btn" onclick="onStreamClick()">Stream</button>
+  </body>
+</html>
